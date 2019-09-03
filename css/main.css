@@ -12,8 +12,14 @@ html, body {
 }
 
 #index .btn, #goodsList section .con ul li, #goodsList section .con ul li .conTop {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center
 }
 
@@ -38,6 +44,7 @@ html, body {
     position: absolute;
     bottom: 2.04rem;
     left: 50%;
+    -webkit-transform: translateX(-50%);
     transform: translateX(-50%)
 }
 
@@ -57,7 +64,7 @@ html, body {
 }
 
 #goodsList header {
-    height: 6.10rem;
+    height: 6.14rem;
 }
 
 #goodsList header .top {
@@ -68,6 +75,7 @@ html, body {
     position: absolute;
     top: 5.46rem;
     left: 50%;
+    -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
     text-align: center
 }
@@ -85,11 +93,15 @@ html, body {
 }
 
 #goodsList section .con ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     width: 7.5rem;
     padding-left: 0.28rem;
     padding-bottom: 0.28rem;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box
 }
 
@@ -101,7 +113,10 @@ html, body {
     font-family: PingFangSC;
     font-weight: 400;
     color: #fff;
-    margin-bottom: 0.4rem;
+    margin-bottom: 0.2rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 }
 
@@ -119,7 +134,8 @@ html, body {
 
 #goodsList section .con ul li .conTitle {
     width: 3.30rem;
-    height: 0.84rem;
+    height: 0.86rem;
+    background: red;
     font-family: PingFangSC;
     font-weight: 400;
     color: #fff;
@@ -145,6 +161,7 @@ html, body {
     width: 7.50rem;
     height: 7.50rem;
     border-radius: 0.04rem;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     display: block
 }
@@ -164,7 +181,11 @@ html, body {
 }
 
 #goodsDetails div.con .conTop {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     font-size: 0.36rem;
     font-family: PingFangSC;
@@ -187,6 +208,8 @@ html, body {
     border-bottom: 0.01rem rgba(85, 91, 123, 0.3) solid;
     font-size: 0.30rem;
     font-family: PingFangSC;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex
 }
 
@@ -194,13 +217,21 @@ html, body {
     width: 1.68rem;
     font-weight: 400;
     color: rgba(0, 0, 0, 0.5);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center
 }
 
 #goodsDetails div.con ul li .right {
     color: #303132;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center
 }
 
@@ -228,6 +259,7 @@ html, body {
     top: 50%;
     left: 50%;
     font-size: 0.27rem;
+    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     color: white;
     letter-spacing: 0.04rem;
