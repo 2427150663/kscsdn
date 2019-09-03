@@ -2,13 +2,40 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    text-decoration: none
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    text-decoration: none;
 }
 
 html, body {
     width: 100%;
     height: 100%;
-    background: white
+    background: white;
+    overflow-x: hidden;
+}
+
+img {
+    vertical-align: bottom;
+}
+
+/*列表*/
+.mescroll-downwarp{
+    position: relative !important;
+    top: 6rem !important; 
+}
+.mescroll {
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    height: auto;
+}
+
+/*回到顶部按钮*/
+
+.mescroll-totop {
+    bottom: 70px;
+    z-index: 99999;
 }
 
 #index .btn, #goodsList section .con ul li, #goodsList section .con ul li .conTop {
@@ -119,9 +146,11 @@ html, body {
     -ms-flex-direction: column;
     flex-direction: column;
 }
-.mescroll-upwarp{
-    height: 0.3rem !important;
+
+.mescroll-upwarp {
+    height: 0.2rem !important;
 }
+
 #goodsList section .con ul li .conTop {
     width: 3.57rem;
     height: 3.57rem;
