@@ -2,40 +2,13 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -webkit-tap-highlight-color: transparent;
     text-decoration: none;
 }
 
 html, body {
     width: 100%;
-    height: 100%;
-    background: white;
-    overflow-x: hidden;
-}
-
-img {
-    vertical-align: bottom;
-}
-
-/*列表*/
-.mescroll-downwarp{
-    position: relative !important;
-    top: 6rem !important; 
-}
-.mescroll {
-    position: fixed;
-    top: 0px;
-    bottom: 0px;
     height: auto;
-}
-
-/*回到顶部按钮*/
-
-.mescroll-totop {
-    bottom: 70px;
-    z-index: 99999;
+    background: white;
 }
 
 #index .btn, #goodsList section .con ul li, #goodsList section .con ul li .conTop {
@@ -51,13 +24,13 @@ img {
 }
 
 .hide {
-    display: none !important
+    display: none !important;
 }
 
 #index {
     width: 7.5rem;
     margin: auto;
-    height: 100%;
+    height: 100vh;
     background: url(../img/indexBG.png) no-repeat center center;
     background-size: 100% 100%
 }
@@ -83,16 +56,14 @@ img {
 }
 
 #goodsList {
-    background: url(../img/goodsListBG.png);
-    background-position-x: 0px;
-    background-size: 100% auto;
-    position: relative;
     width: 7.5rem;
     margin: auto
 }
 
 #goodsList header {
-    height: 6.14rem;
+    height: 8rem;
+    background: url(../img/goodsListBG.png)no-repeat;
+    background-size: 100% auto;
 }
 
 #goodsList header .top {
@@ -117,7 +88,9 @@ img {
 
 #goodsList section {
     width: 7.5rem;
-    margin: auto
+    margin: auto;
+    position: relative;
+    margin-top: -1.7rem;
 }
 
 #goodsList section .con ul {
@@ -128,8 +101,9 @@ img {
     flex-wrap: wrap;
     width: 7.5rem;
     padding-left: 0.28rem;
+    padding-bottom: 0.28rem;
     -webkit-box-sizing: border-box;
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 
 #goodsList section .con ul li {
@@ -145,10 +119,6 @@ img {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-}
-
-.mescroll-upwarp {
-    height: 0.2rem !important;
 }
 
 #goodsList section .con ul li .conTop {
