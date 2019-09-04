@@ -1,248 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-        content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>商品列表</title>
-    <link rel="stylesheet" href="css/main.css">
-</head>
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/mescroll.js@1.4.1/mescroll.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/mescroll.js@1.4.1/mescroll.min.js"
+      charset="utf-8"
+    ></script>
+  </head>
 
-<body style=" background:#000052">
-    <div id="goodsList">
-        <header>
-            <div class="top">
-                <div class="title">
-                    可兑换商品
-                </div>
-            </div>
-        </header>
-        <section>
-            <div class="con">
-                <ul>
-                    <li onclick="window.location.href='goodsDetails.html'">
-                        <div class="conTop">
-                            <img src="http://img0w.pclady.com.cn/pclady/1108/17/spcgroup/width_640-qua_60/726119_2.jpg"
-                                alt="">
-                        </div>
-                        <div class="conTitle">
-                            amovo魔吻中秋节巧克力冰皮月饼
-                        </div>
-                    </li>
-                    <li onclick="window.location.href='goodsDetails.html'">
-                        <div class="conTop">
-                            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1567488783005&di=2e9081bc7e234b3205e1c858d6a541a4&imgtype=0&src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20180910%2F35e2273d3f2144c8a163c599f0ed0298.jpeg"
-                                alt="">
-                        </div>
-                        <div class="conTitle">
-                            CANSO——元祖月饼
-                        </div>
-                    </li>
-                    <li onclick="window.location.href='goodsDetails.html'">
-                        <div class="conTop">
-                            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1567488783005&di=b4e225a65b55fceb513e81cbab678456&imgtype=0&src=http%3A%2F%2Fcp1.douguo.com%2Fupload%2Fcaiku%2Fa%2F9%2F9%2Fyuan_a96535369208294fca6186205a1d7399.jpg"
-                                alt="">
-                        </div>
-                        <div class="conTitle">
-                            amovo魔吻中秋节巧克力冰皮月饼
-                        </div>
-                    </li>
-                    <li onclick="window.location.href='goodsDetails.html'">
-                        <div class="conTop">
-                            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1567488783004&di=a7bb98f89abc70c44a6d2571bd7a15b7&imgtype=0&src=http%3A%2F%2Fimg.sccnn.com%2Fbimg%2F324%2F418.jpg"
-                                alt="">
-                        </div>
-                        <div class="conTitle">
-                            Maky——米旗巧克力冰皮月饼
-                        </div>
-                    </li>
-                    <li onclick="window.location.href='goodsDetails.html'">
-                        <div class="conTop">
-                            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1567488783002&di=e4ebc9538eac78e5d16e647268c93f19&imgtype=0&src=http%3A%2F%2Fimg.juimg.com%2Ftuku%2Fyulantu%2F121017%2F240425-12101G9591263.jpg"
-                                alt="">
-                        </div>
-                        <div class="conTitle">
-                            华美月饼巧克力冰皮月饼
-                        </div>
-                    </li>
-                    <li onclick="window.location.href='goodsDetails.html'">
-                        <div class="conTop">
-                            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1567488783070&di=d11872f925037c140520a65dd5bc2a47&imgtype=0&src=http%3A%2F%2Fwww.lovehhy.net%2Flib%2Fimg%2F74826%2F203678_1732237563.jpg"
-                                alt="">
-                        </div>
-                        <div class="conTitle">
-                            安琪月饼中秋节巧克力冰皮月饼
-                        </div>
-                    </li>
-                    <li onclick="window.location.href='goodsDetails.html'">
-                        <div class="conTop">
-                            <img src="http://img0w.pclady.com.cn/pclady/1108/17/spcgroup/width_640-qua_60/726119_2.jpg"
-                                alt="">
-                        </div>
-                        <div class="conTitle">
-                            amovo魔吻中秋节巧克力冰皮月饼
-                        </div>
-                    </li>
-                    <li onclick="window.location.href='goodsDetails.html'">
-                        <div class="conTop">
-                            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1567488783005&di=2e9081bc7e234b3205e1c858d6a541a4&imgtype=0&src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20180910%2F35e2273d3f2144c8a163c599f0ed0298.jpeg"
-                                alt="">
-                        </div>
-                        <div class="conTitle">
-                            CANSO——元祖月饼
-                        </div>
-                    </li>
-                    <li onclick="window.location.href='goodsDetails.html'">
-                        <div class="conTop">
-                            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1567488783005&di=b4e225a65b55fceb513e81cbab678456&imgtype=0&src=http%3A%2F%2Fcp1.douguo.com%2Fupload%2Fcaiku%2Fa%2F9%2F9%2Fyuan_a96535369208294fca6186205a1d7399.jpg"
-                                alt="">
-                        </div>
-                        <div class="conTitle">
-                            amovo魔吻中秋节巧克力冰皮月饼
-                        </div>
-                    </li>
-                    <li onclick="window.location.href='goodsDetails.html'">
-                        <div class="conTop">
-                            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1567488783004&di=a7bb98f89abc70c44a6d2571bd7a15b7&imgtype=0&src=http%3A%2F%2Fimg.sccnn.com%2Fbimg%2F324%2F418.jpg"
-                                alt="">
-                        </div>
-                        <div class="conTitle">
-                            Maky——米旗巧克力冰皮月饼
-                        </div>
-                    </li>
-                    <li onclick="window.location.href='goodsDetails.html'">
-                        <div class="conTop">
-                            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1567488783002&di=e4ebc9538eac78e5d16e647268c93f19&imgtype=0&src=http%3A%2F%2Fimg.juimg.com%2Ftuku%2Fyulantu%2F121017%2F240425-12101G9591263.jpg"
-                                alt="">
-                        </div>
-                        <div class="conTitle">
-                            华美月饼巧克力冰皮月饼
-                        </div>
-                    </li>
-                    <li onclick="window.location.href='goodsDetails.html'">
-                        <div class="conTop">
-                            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1567488783070&di=d11872f925037c140520a65dd5bc2a47&imgtype=0&src=http%3A%2F%2Fwww.lovehhy.net%2Flib%2Fimg%2F74826%2F203678_1732237563.jpg"
-                                alt="">
-                        </div>
-                        <div class="conTitle">
-                            安琪月饼中秋节巧克力冰皮月饼
-                        </div>
-                    </li>
-                    <li onclick="window.location.href='goodsDetails.html'">
-                        <div class="conTop">
-                            <img src="http://img0w.pclady.com.cn/pclady/1108/17/spcgroup/width_640-qua_60/726119_2.jpg"
-                                alt="">
-                        </div>
-                        <div class="conTitle">
-                            amovo魔吻中秋节巧克力冰皮月饼
-                        </div>
-                    </li>
-                    <li onclick="window.location.href='goodsDetails.html'">
-                        <div class="conTop">
-                            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1567488783005&di=2e9081bc7e234b3205e1c858d6a541a4&imgtype=0&src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20180910%2F35e2273d3f2144c8a163c599f0ed0298.jpeg"
-                                alt="">
-                        </div>
-                        <div class="conTitle">
-                            CANSO——元祖月饼
-                        </div>
-                    </li>
-                    <li onclick="window.location.href='goodsDetails.html'">
-                        <div class="conTop">
-                            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1567488783005&di=b4e225a65b55fceb513e81cbab678456&imgtype=0&src=http%3A%2F%2Fcp1.douguo.com%2Fupload%2Fcaiku%2Fa%2F9%2F9%2Fyuan_a96535369208294fca6186205a1d7399.jpg"
-                                alt="">
-                        </div>
-                        <div class="conTitle">
-                            amovo魔吻中秋节巧克力冰皮月饼
-                        </div>
-                    </li>
-                    <li onclick="window.location.href='goodsDetails.html'">
-                        <div class="conTop">
-                            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1567488783004&di=a7bb98f89abc70c44a6d2571bd7a15b7&imgtype=0&src=http%3A%2F%2Fimg.sccnn.com%2Fbimg%2F324%2F418.jpg"
-                                alt="">
-                        </div>
-                        <div class="conTitle">
-                            Maky——米旗巧克力冰皮月饼
-                        </div>
-                    </li>
-                    <li onclick="window.location.href='goodsDetails.html'">
-                        <div class="conTop">
-                            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1567488783002&di=e4ebc9538eac78e5d16e647268c93f19&imgtype=0&src=http%3A%2F%2Fimg.juimg.com%2Ftuku%2Fyulantu%2F121017%2F240425-12101G9591263.jpg"
-                                alt="">
-                        </div>
-                        <div class="conTitle">
-                            华美月饼巧克力冰皮月饼
-                        </div>
-                    </li>
-                    <li onclick="window.location.href='goodsDetails.html'">
-                        <div class="conTop">
-                            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1567488783070&di=d11872f925037c140520a65dd5bc2a47&imgtype=0&src=http%3A%2F%2Fwww.lovehhy.net%2Flib%2Fimg%2F74826%2F203678_1732237563.jpg"
-                                alt="">
-                        </div>
-                        <div class="conTitle">
-                            安琪月饼中秋节巧克力冰皮月饼
-                        </div>
-                    </li>
-                    <li onclick="window.location.href='goodsDetails.html'">
-                        <div class="conTop">
-                            <img src="http://img0w.pclady.com.cn/pclady/1108/17/spcgroup/width_640-qua_60/726119_2.jpg"
-                                alt="">
-                        </div>
-                        <div class="conTitle">
-                            amovo魔吻中秋节巧克力冰皮月饼
-                        </div>
-                    </li>
-                    <li onclick="window.location.href='goodsDetails.html'">
-                        <div class="conTop">
-                            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1567488783005&di=2e9081bc7e234b3205e1c858d6a541a4&imgtype=0&src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20180910%2F35e2273d3f2144c8a163c599f0ed0298.jpeg"
-                                alt="">
-                        </div>
-                        <div class="conTitle">
-                            CANSO——元祖月饼
-                        </div>
-                    </li>
-                    <li onclick="window.location.href='goodsDetails.html'">
-                        <div class="conTop">
-                            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1567488783005&di=b4e225a65b55fceb513e81cbab678456&imgtype=0&src=http%3A%2F%2Fcp1.douguo.com%2Fupload%2Fcaiku%2Fa%2F9%2F9%2Fyuan_a96535369208294fca6186205a1d7399.jpg"
-                                alt="">
-                        </div>
-                        <div class="conTitle">
-                            amovo魔吻中秋节巧克力冰皮月饼
-                        </div>
-                    </li>
-                    <li onclick="window.location.href='goodsDetails.html'">
-                        <div class="conTop">
-                            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1567488783004&di=a7bb98f89abc70c44a6d2571bd7a15b7&imgtype=0&src=http%3A%2F%2Fimg.sccnn.com%2Fbimg%2F324%2F418.jpg"
-                                alt="">
-                        </div>
-                        <div class="conTitle">
-                            Maky——米旗巧克力冰皮月饼
-                        </div>
-                    </li>
-                    <li onclick="window.location.href='goodsDetails.html'">
-                        <div class="conTop">
-                            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1567488783002&di=e4ebc9538eac78e5d16e647268c93f19&imgtype=0&src=http%3A%2F%2Fimg.juimg.com%2Ftuku%2Fyulantu%2F121017%2F240425-12101G9591263.jpg"
-                                alt="">
-                        </div>
-                        <div class="conTitle">
-                            华美月饼巧克力冰皮月饼
-                        </div>
-                    </li>
-                    <li onclick="window.location.href='goodsDetails.html'">
-                        <div class="conTop">
-                            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1567488783070&di=d11872f925037c140520a65dd5bc2a47&imgtype=0&src=http%3A%2F%2Fwww.lovehhy.net%2Flib%2Fimg%2F74826%2F203678_1732237563.jpg"
-                                alt="">
-                        </div>
-                        <div class="conTitle">
-                            安琪月饼中秋节巧克力冰皮月饼
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
+  <body style=" background:#000052">
+    <div id="bg">
+      <img src="img/true.png" alt="" />
     </div>
-</body>
-<script src="js/main.js"></script>
+    <div id="goodsList" class="mescroll">
+      <header>
+        <div class="top">
+          <div class="title">
+            可兑换商品
+          </div>
+        </div>
+      </header>
+      <section>
+        <div class="con">
+          <ul id="ulu">
+            <li onclick="window.location.href='goodsDetails.html'">
+              <div class="conTop">
+                <img
+                  src="http://img0w.pclady.com.cn/pclady/1108/17/spcgroup/width_640-qua_60/726119_2.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="conTitle">
+                amovo魔吻中秋节巧克力冰皮月饼
+              </div>
+            </li>
+            <li onclick="window.location.href='goodsDetails.html'">
+              <div class="conTop">
+                <img
+                  src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1567488783005&di=2e9081bc7e234b3205e1c858d6a541a4&imgtype=0&src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20180910%2F35e2273d3f2144c8a163c599f0ed0298.jpeg"
+                  alt=""
+                />
+              </div>
+              <div class="conTitle">
+                CANSO——元祖月饼
+              </div>
+            </li>
+            <li onclick="window.location.href='goodsDetails.html'">
+              <div class="conTop">
+                <img
+                  src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1567488783005&di=b4e225a65b55fceb513e81cbab678456&imgtype=0&src=http%3A%2F%2Fcp1.douguo.com%2Fupload%2Fcaiku%2Fa%2F9%2F9%2Fyuan_a96535369208294fca6186205a1d7399.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="conTitle">
+                amovo魔吻中秋节巧克力冰皮月饼
+              </div>
+            </li>
+            <li onclick="window.location.href='goodsDetails.html'">
+              <div class="conTop">
+                <img
+                  src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1567488783004&di=a7bb98f89abc70c44a6d2571bd7a15b7&imgtype=0&src=http%3A%2F%2Fimg.sccnn.com%2Fbimg%2F324%2F418.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="conTitle">
+                Maky——米旗巧克力冰皮月饼
+              </div>
+            </li>
+            <li onclick="window.location.href='goodsDetails.html'">
+              <div class="conTop">
+                <img
+                  src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1567488783002&di=e4ebc9538eac78e5d16e647268c93f19&imgtype=0&src=http%3A%2F%2Fimg.juimg.com%2Ftuku%2Fyulantu%2F121017%2F240425-12101G9591263.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="conTitle">
+                华美月饼巧克力冰皮月饼
+              </div>
+            </li>
+            <li onclick="window.location.href='goodsDetails.html'">
+              <div class="conTop">
+                <img
+                  src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1567488783070&di=d11872f925037c140520a65dd5bc2a47&imgtype=0&src=http%3A%2F%2Fwww.lovehhy.net%2Flib%2Fimg%2F74826%2F203678_1732237563.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="conTitle">
+                安琪月饼中秋节巧克力冰皮月饼
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </body>
+  <script src="js/main.js"></script>
+  <script>
+    //创建MeScroll对象,内部已默认开启下拉刷新,自动执行up.callback,重置列表数据;
+    var mescroll = new MeScroll("goodsList", {
+      down: {
+        auto: false, //是否在初始化完毕之后自动执行下拉回调callback; 默认true
+        callback: downCallback //下拉刷新的回调
+      },
+      up: {
+        auto: true, //初始化完毕,是否自动触发上拉加载的回调
+        isBoth: true, //上拉加载时,如果滑动到列表顶部是否可以同时触发下拉刷新;默认false,两者不可同时触发; 这里为了演示改为true,不必等列表加载完毕才可下拉;
+        callback: upCallback, //上拉加载的回调
+        isBounce: false, //此处禁止ios回弹,解析(务必认真阅读,特别是最后一点): http://www.mescroll.com/qa.html#q10
+        toTop: {
+          //配置回到顶部按钮
+          src: "./img/mescroll-totop.png" //默认滚动到1000px显示,可配置offset修改
+          //offset : 1000
+        },
+        lazyLoad: {
+          use: true // 是否开启懒加载,默认false
+        }
+      }
+    });
+    /*下拉刷新的回调 */
+    function downCallback() {
+      //加载轮播数据..
+      //...
+      //加载列表数据
+      getListDataFromNet(
+        1,
+        10,
+        function(data) {
+          //联网成功的回调,隐藏下拉刷新的状态
+          mescroll.endSuccess();
+          //设置列表数据
+          setListData(data, false);
+        },
+        function() {
+          //联网失败的回调,隐藏下拉刷新的状态
+          mescroll.endErr();
+        }
+      );
+    }
 
+    let index = 1;
+    /*上拉加载的回调 page = {num:1, size:10}; num:当前页 从1开始, size:每页数据条数 */
+    function upCallback(page) {
+      //联网加载数据
+      getListDataFromNet(
+        page.num,
+        page.size,
+        function(curPageData) {
+          mescroll.endSuccess(curPageData.length);
+          setListData(curPageData, true);
+        },
+        function() {
+          mescroll.endErr();
+        }
+      );
+    }
+
+    /*设置列表数据*/
+    function setListData(curPageData, isAppend) {
+      var listDom = document.getElementById("ulu");
+      curPageData.forEach((x, i) => {
+        var htm = ` <div class="conTop">
+                            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1567488783070&di=d11872f925037c140520a65dd5bc2a47&imgtype=0&src=http%3A%2F%2Fwww.lovehhy.net%2Flib%2Fimg%2F74826%2F203678_1732237563.jpg"
+                                alt="">
+                        </div>
+                        <div class="conTitle">
+                            ${index * 10 - 10 + i} 安琪月饼中秋节巧克力冰皮月饼
+                        </div>
+                  `;
+        var liDom = document.createElement("li");
+        liDom.innerHTML = htm;
+        listDom.appendChild(liDom);
+      });
+    }
+
+    function getListDataFromNet(
+      pageNum,
+      pageSize,
+      successCallback,
+      errorCallback
+    ) {
+      fetch(
+        `http://yapi.demo.qunar.com/mock/70481/api/theScreenOnThe/getTaskdetaillIST?pageIndex=${pageNum}&pageSize=${pageSize}`
+      )
+        .then(response => response.json())
+        .then(res => {
+          setTimeout(() => {
+            index++;
+            successCallback(res.data.list);
+          }, 3000);
+        });
+    }
+  </script>
 </html>

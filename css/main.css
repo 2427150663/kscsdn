@@ -2,16 +2,47 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
     text-decoration: none;
 }
 
-html, body {
+html,
+body {
     width: 100%;
-    height: auto;
+    height: 100%;
     background: white;
+    overflow-x: hidden;
 }
 
-#index .btn, #goodsList section .con ul li, #goodsList section .con ul li .conTop {
+img {
+    vertical-align: bottom;
+}
+
+/*列表*/
+.mescroll-downwarp {
+    position: relative !important;
+    top: 6rem !important;
+}
+
+.mescroll {
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    height: auto;
+}
+
+/*回到顶部按钮*/
+
+.mescroll-totop {
+    bottom: 70px;
+    z-index: 99999;
+}
+
+#index .btn,
+#goodsList section .con ul li,
+#goodsList section .con ul li .conTop {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -24,13 +55,13 @@ html, body {
 }
 
 .hide {
-    display: none !important;
+    display: none !important
 }
 
 #index {
     width: 7.5rem;
     margin: auto;
-    height: 100vh;
+    height: 100%;
     background: url(../img/indexBG.png) no-repeat center center;
     background-size: 100% 100%
 }
@@ -57,12 +88,16 @@ html, body {
 
 #goodsList {
     width: 7.5rem;
-    margin: auto
+    position: relative;
+    margin: auto;
+    z-index: 999;
+    overflow-x: hidden;
 }
+
 
 #goodsList header {
     height: 8rem;
-    background: url(../img/goodsListBG.png)no-repeat;
+    background: url(../img/goodsdwListBG.png)no-repeat;
     background-size: 100% auto;
 }
 
@@ -90,7 +125,7 @@ html, body {
     width: 7.5rem;
     margin: auto;
     position: relative;
-    margin-top: -1.7rem;
+    margin-top: -1.5rem;
 }
 
 #goodsList section .con ul {
@@ -101,9 +136,15 @@ html, body {
     flex-wrap: wrap;
     width: 7.5rem;
     padding-left: 0.28rem;
-    padding-bottom: 0.28rem;
     -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+    box-sizing: border-box
+}
+
+
+#bg img {
+    width: 2rem;
+    display: block;
+    margin: auto;
 }
 
 #goodsList section .con ul li {
@@ -114,11 +155,15 @@ html, body {
     font-family: PingFangSC;
     font-weight: 400;
     color: #fff;
-    margin-bottom: 0.2rem;
+    margin-bottom: 0.25rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+}
+
+.mescroll-upwarp {
+    height: 0.2rem !important;
 }
 
 #goodsList section .con ul li .conTop {
