@@ -27,10 +27,6 @@ img {
 
 /*回到顶部按钮*/
 
-.mescroll-totop {
-    bottom: 70px;
-    z-index: 99999;
-}
 
 #index .btn, #goodsList section .con ul li, #goodsList section .con ul li .conTop {
     display: -webkit-box;
@@ -91,10 +87,6 @@ img {
     position: relative;
 }
 
-#goodsList header.fixed {
-    display: fixed;
-    top: 0px;
-}
 
 #goodsList header .top {
     width: 2.92rem;
@@ -120,7 +112,7 @@ img {
     width: 7.5rem;
     margin: auto;
     position: relative;
-    margin-top: -1.5rem;
+    margin-top: -1.8rem;
 }
 
 #goodsList section .con ul {
@@ -157,7 +149,8 @@ img {
 }
 
 .mescroll-upwarp {
-    height: 0.2rem !important;
+    height: 0.4rem !important;
+    line-height: 0.3rem !important;
 }
 
 #goodsList section .con ul li .conTop {

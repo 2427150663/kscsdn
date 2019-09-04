@@ -12,74 +12,16 @@
 
 <body style=" background:#000052">
   <div id="goodsList" class="mescroll">
-    <header class="fixed">
+    <header>
       <div class="top">
         <div class="title">
           可兑换商品
         </div>
       </div>
     </header>
-    <section>
+    <section id="mess">
       <div class="con">
         <ul id="ulu">
-          <li onclick="window.location.href='goodsDetails.html'">
-            <div class="conTop">
-              <img src="http://img0w.pclady.com.cn/pclady/1108/17/spcgroup/width_640-qua_60/726119_2.jpg" alt="" />
-            </div>
-            <div class="conTitle">
-              amovo魔吻中秋节巧克力冰皮月饼
-            </div>
-          </li>
-          <li onclick="window.location.href='goodsDetails.html'">
-            <div class="conTop">
-              <img
-                src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1567488783005&di=2e9081bc7e234b3205e1c858d6a541a4&imgtype=0&src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20180910%2F35e2273d3f2144c8a163c599f0ed0298.jpeg"
-                alt="" />
-            </div>
-            <div class="conTitle">
-              CANSO——元祖月饼
-            </div>
-          </li>
-          <li onclick="window.location.href='goodsDetails.html'">
-            <div class="conTop">
-              <img
-                src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1567488783005&di=b4e225a65b55fceb513e81cbab678456&imgtype=0&src=http%3A%2F%2Fcp1.douguo.com%2Fupload%2Fcaiku%2Fa%2F9%2F9%2Fyuan_a96535369208294fca6186205a1d7399.jpg"
-                alt="" />
-            </div>
-            <div class="conTitle">
-              amovo魔吻中秋节巧克力冰皮月饼
-            </div>
-          </li>
-          <li onclick="window.location.href='goodsDetails.html'">
-            <div class="conTop">
-              <img
-                src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1567488783004&di=a7bb98f89abc70c44a6d2571bd7a15b7&imgtype=0&src=http%3A%2F%2Fimg.sccnn.com%2Fbimg%2F324%2F418.jpg"
-                alt="" />
-            </div>
-            <div class="conTitle">
-              Maky——米旗巧克力冰皮月饼
-            </div>
-          </li>
-          <li onclick="window.location.href='goodsDetails.html'">
-            <div class="conTop">
-              <img
-                src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1567488783002&di=e4ebc9538eac78e5d16e647268c93f19&imgtype=0&src=http%3A%2F%2Fimg.juimg.com%2Ftuku%2Fyulantu%2F121017%2F240425-12101G9591263.jpg"
-                alt="" />
-            </div>
-            <div class="conTitle">
-              华美月饼巧克力冰皮月饼
-            </div>
-          </li>
-          <li onclick="window.location.href='goodsDetails.html'">
-            <div class="conTop">
-              <img
-                src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1567488783070&di=d11872f925037c140520a65dd5bc2a47&imgtype=0&src=http%3A%2F%2Fwww.lovehhy.net%2Flib%2Fimg%2F74826%2F203678_1732237563.jpg"
-                alt="" />
-            </div>
-            <div class="conTitle">
-              安琪月饼中秋节巧克力冰皮月饼
-            </div>
-          </li>
         </ul>
       </div>
     </section>
@@ -99,13 +41,12 @@
       isBoth: true, //上拉加载时,如果滑动到列表顶部是否可以同时触发下拉刷新;默认false,两者不可同时触发; 这里为了演示改为true,不必等列表加载完毕才可下拉;
       callback: upCallback, //上拉加载的回调
       isBounce: false, //此处禁止ios回弹,解析(务必认真阅读,特别是最后一点): http://www.mescroll.com/qa.html#q10
-      toTop: {
-        //配置回到顶部按钮
-        src: "./img/mescroll-totop.png" //默认滚动到1000px显示,可配置offset修改
-        //offset : 1000
-      },
       lazyLoad: {
         use: true // 是否开启懒加载,默认false
+      },
+      toTop: { //配置回到顶部按钮
+        src: "./img/mescroll-totop.png", //默认滚动到1000px显示,可配置offset修改
+        offset: 800
       }
     }
   });
@@ -150,19 +91,41 @@
   /*设置列表数据*/
   function setListData(curPageData, isAppend) {
     var listDom = document.getElementById("ulu");
+    let kt = "";
+    console.log(curPageData.length)
     curPageData.forEach((x, i) => {
+      console.log(i)
       var htm = ` <div class="conTop">
-                            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1567488783070&di=d11872f925037c140520a65dd5bc2a47&imgtype=0&src=http%3A%2F%2Fwww.lovehhy.net%2Flib%2Fimg%2F74826%2F203678_1732237563.jpg"
+                            <img imgurl="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1567488783070&di=d11872f925037c140520a65dd5bc2a47&imgtype=0&src=http%3A%2F%2Fwww.lovehhy.net%2Flib%2Fimg%2F74826%2F203678_1732237563.jpg"
                                 alt="">
                         </div>
                         <div class="conTitle">
-                            ${index * 10 - 10 + i} 安琪月饼中秋节巧克力冰皮月饼
+                            ${index * 10 - 10 + i + 1} 安琪月饼中秋节巧克力冰皮月饼
                         </div>
                   `;
+      kt += `<li onclick="window.location.href='goodsDetails.html?id=' + ${i + 1}'">
+            <div class="conTop">
+              <img
+              imgurl="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1567488783002&di=e4ebc9538eac78e5d16e647268c93f19&imgtype=0&src=http%3A%2F%2Fimg.juimg.com%2Ftuku%2Fyulantu%2F121017%2F240425-12101G9591263.jpg"
+                alt=""  src="img/load.png"/>
+            </div>
+            <div class="conTitle">
+              ${index * 10 - 10 + i + 1}华美月饼巧克力冰皮月饼
+            </div>
+          </li>`;
       var liDom = document.createElement("li");
-      liDom.innerHTML = htm;
-      listDom.appendChild(liDom);
+      liDom.onclick = function () {
+        window.location.href = 'goodsDetails.html?id=' + (i + 1);
+      }
+      if (isAppend) {
+        liDom.innerHTML = htm;
+        listDom.appendChild(liDom);
+      }
     });
+    if (!isAppend) {
+      console.log(kt)
+      listDom.innerHTML = kt;
+    }
   }
 
   function getListDataFromNet(
@@ -176,10 +139,14 @@
     )
       .then(response => response.json())
       .then(res => {
+        let arr = res.data.list;
         setTimeout(() => {
-          index++;
-          successCallback(res.data.list);
-        }, 3000);
+          index = pageNum;
+          if (index > 2) {
+            arr = [];
+          }
+          successCallback(arr);
+        }, 500);
       });
   }
 </script>
